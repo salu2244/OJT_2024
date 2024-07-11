@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.a {
+            width: 150px;
+            height: 80px;
+            background-color: #d40b15;
+            border: 10px dotted green;
+            transform: rotate(20deg);
+        }
+        div.b {
+            width: 150px;
+            height: 80px;
+            background-color: hwb(157 5% 9% / 0.753);
+            border: 10px dotted hsl(76, 73%, 51%);
+            transform: rotate(30deg);
+        }
+        div.c {
+            width: 150px;
+            height: 80px;
+            background-color: rgb(255, 115, 0);
+            border: 10px dotted rgb(15, 145, 231);
+            transform: rotate(40deg);
+            transition: height 2s, width 2s, background 2s;
+        }
+
+        h2 {
+            width: 350px;
+            animation-name: text;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            background-color: rgb(255, 255, 255); /* Corrected RGB values */
+        }
+
+        @keyframes text {
+            0% { color: red; }
+            50% { color: green; }
+            100% { color: blue; }
+        }
+    </style>
+</head>
+<body>
+    <h2>transform: rotate(20 degrees)</h2>
+    <div class="a">Edinet Foundation</div>
+    <div class="b">Edinet Foundation Kolkata</div>
+    <div class="c">Edinet Foundation All-ADIT</div>
+</body>
+</html>
