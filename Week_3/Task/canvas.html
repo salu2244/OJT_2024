@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="mycanvas1" width="200" height="100" style="border: 1px solid #8fe407;">
+        Your browser does not support the HTML canvas
+    </canvas>
+    <canvas id="mycanvas2" width="200" height="100" style="border: 1px solid hsl(0, 89%, 47%);">
+        Your browser does not support the HTML canvas
+    </canvas>
+
+    <script>
+        var c1 = document.getElementById("mycanvas1");
+        var ctx1 = c1.getContext("2d");
+        ctx1.moveTo(0, 0); // Corrected moveTo coordinates
+        ctx1.lineTo(200, 100);
+        ctx1.stroke();
+
+        // Drawing on my second canvas
+        var c2 = document.getElementById("mycanvas2");
+        var ctx2 = c2.getContext("2d");
+        ctx2.moveTo(0, 0); // Corrected moveTo coordinates
+        ctx2.lineTo(200, 100);
+        ctx2.stroke();
+    </script>
+</body>
+</html>
