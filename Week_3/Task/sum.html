@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript</title>
+</head>
+<body>
+    <script>
+        let sum = 44;
+        console.log(sum);
+    </script>
+    <p>The value of sum is: <span id="output"></span></p>
+    <script>
+        document.getElementById('output').innerText = sum;
+    </script>
+</body>
+</html>

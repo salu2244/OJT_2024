@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var weekdays = 0;
+        for (var day = 1; day <= 31; day++) {
+            var checkDay = day % 7;
+            if (checkDay !== 0) {
+                weekdays++;
+            }
+        }
+        document.write(weekdays + " weekdays this month.");
+    </script>
+</body>
+</html>
